@@ -122,7 +122,8 @@
         //下单
         $("#createorder").on("click", function () {
             //2022-06-07 库存为0就不进入后台了
-            var st = $("#stock").val()
+            var st = $("#stock").text()
+            alert(st);
             if (st == 0){
                 alert("商品库存不足")
                 return ;
